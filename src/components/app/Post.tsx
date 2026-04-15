@@ -7,7 +7,7 @@ const Post = () => {
   return (
     <div className="space-y-8">
       {
-        Array(20).fill(0).map((item, index)=>(
+        Array(20).fill(0).map((_, index)=>(
           <Card 
             key={index}
           >

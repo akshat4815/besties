@@ -2,7 +2,6 @@ import { Link, Outlet, useLocation } from "react-router-dom"
 import Avatar from "../shared/Avatar"
 import Card from "../shared/Card"
 import { useState } from "react"
-import Button from "../shared/Button"
 import Dashboard from "./Dashboard"
 
 const Layout = () => {
@@ -116,7 +115,7 @@ const Layout = () => {
                     <Card title="Suggested" divider>
                         <div className="space-y-8">
                             {
-                                Array(20).fill(0).map((item, index)=>(
+                                Array(20).fill(0).map((_, index)=>(
                                     <div key={index} className="flex gap-4">
                                         <img src="/images/avt.avif" alt="avf" className="w-16 h-16 rounded object-cover" />
                                         <div>
@@ -135,7 +134,7 @@ const Layout = () => {
                 <Card title="Friends" divider>
                 <div className="space-y-5">
                     {
-                        Array(20).fill(0).map((item, index)=>(
+                        Array(20).fill(0).map((_, index)=>(
                             <div key={index} className="bg-gray-50 p-3 rounded-lg flex justify-between">
                                 <Avatar 
                                     size="md"

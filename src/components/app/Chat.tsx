@@ -1,4 +1,3 @@
-import React from 'react'
 import Avatar from '../shared/Avatar'
 import Input from '../shared/Input'
 import Button from '../shared/Button'
@@ -8,7 +7,7 @@ const Chat = () => {
     <div>
         <div className='h-[450px] overflow-auto space-y-12 pr-6 relative'>
             {
-                Array(20).fill(0).map((item, index)=>(
+                Array(20).fill(0).map((_, index)=>(
                     <div className='space-y-12' key={index}>
                         <div className='flex gap-4 items-start'>
                             <Avatar image='/images/avt.avif' size='md' />

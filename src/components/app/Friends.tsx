@@ -4,7 +4,7 @@ const Friends = () => {
   return (
     <div className="grid grid-cols-3 gap-8">
       {
-        Array(20).fill(0).map((item, index)=>(
+        Array(20).fill(0).map((_, index)=>(
           <Card key={index}>
             <div className="flex flex-col items-center gap-3">
               <img src="/images/avt.avif" className="w-16 h-16 rounded-full object-cover" />
